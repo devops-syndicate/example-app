@@ -5,6 +5,9 @@ metadata:
   annotations:
     github.com/project-slug: "devops-syndicate/example-app"
     argocd/app-name: example-app
+    backstage.io/kubernetes-namespace: example-app
+    backstage.io/kubernetes-id: example-app
+    backstage.io/kubernetes-label-selector: 'app.oam.dev/name=example-app'
     backstage.io/techdocs-ref: dir:.
   links:
     - title: Link to ArgoCD
