@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "example-app"
+  annotations:
+    github.com/project-slug: "devops-syndicate/example-app"
+    argocd/app-name: example-app
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - title: Link to ArgoCD
+      url: http://argo-cd.127.0.0.1.nip.io/applications/example-app
+  tags:
+  - golang
+spec:
+  type: service
+  owner: team-a
+  lifecycle: production
+  providesApis:
+    - example-app-api
